@@ -1,0 +1,70 @@
+{
+  "name": "swap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": " NODE_ENV=dev vue-cli-service serve",
+    "test": "vue-cli-service serve --mode test",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@scatterjs/core": "^2.7.54",
+    "@scatterjs/eosjs": "^1.5.37",
+    "axios": "^0.19.0",
+    "dayjs": "^1.9.1",
+    "decimal.js": "^10.2.0",
+    "eosjs-without-sort": "^16.0.11",
+    "fcbuffer": "^2.2.2",
+    "mint-ui": "^2.2.13",
+    "remove": "^0.1.5",
+    "swiper": "^6.0.4",
+    "vue": "^2.6.11",
+    "vue-clipboard2": "^0.3.1",
+    "vue-i18n": "^8.17.4",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-eslint": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^5.0.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "postcss-pxtorem": "^5.1.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "generator-star-spacing": "off",
+      "no-tabs": "off",
+      "no-unused-vars": "off",
+      "no-console": "off",
+      "no-irregular-whitespace": "off",
+      "no-debugger": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

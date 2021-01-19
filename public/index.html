@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="DeFi,Swap,Exchange,DEX,EOS,Blockchain,Crypto,Hamburger,Burger">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) { %>
+      <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
+      <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
+    <% } %>
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+      <link href="<%= htmlWebpackPlugin.options.cdn.js[i] %>" rel="preload" as="script">
+    <% } %>
+    <script src="https://at.alicdn.com/t/font_2030171_ctfdsnp2jk7.js"></script>
+    <title>Hamburger</title>
+  </head>
+  <body>
+    <script>function resize() { document.getElementsByTagName('html')[0].style.fontSize = window.innerWidth > 750 ? '75px' : window.innerWidth / 10 + 'px'; console.log(window.innerWidth > 750 ? '75px' : window.innerWidth / 10 + 'px'); }; window.onresize = resize; resize();</script>
+    <noscript>
+      <strong>Please enable javascript to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+      <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+    <% } %>
+  </body>
+</html>
